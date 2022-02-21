@@ -18,7 +18,7 @@ export const Contact = () => {
     const {name,value} = e.target;
     setState((prevState) => ({ ...prevState, [name]: value }));
   }
-  const clearState = () => setState({ ...initialState })
+  const clearState = () => this.setState({ ...initialState })
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -33,6 +33,7 @@ export const Contact = () => {
       .then(res => {
         clearState();
       });
+
     }
   
   // const [{ name, email, message }, setState] = useState(initialState)
@@ -83,6 +84,7 @@ export const Contact = () => {
                         name='name'
                         className='form-control'
                         placeholder='Name'
+                        value={this.state.name}
                         required
                         onChange={handleChange}
                       />
@@ -97,6 +99,7 @@ export const Contact = () => {
                         name='email'
                         className='form-control'
                         placeholder='Email'
+                        value={this.state.email}
                         required
                         onChange={handleChange}
                       />
@@ -111,6 +114,7 @@ export const Contact = () => {
                     className='form-control'
                     rows='4'
                     placeholder='Message'
+                    value={this.state.message}
                     required
                     onChange={handleChange}
                   ></textarea>
