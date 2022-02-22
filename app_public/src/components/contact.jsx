@@ -6,7 +6,7 @@ const initialState = {
   name: '',
   email: '',
   message: '',
-  sendmsg:'Thank you for contacting me. I will get back shortly.',
+  
 }
 
 
@@ -31,6 +31,7 @@ export const Contact = () => {
 
     axios.post('/api/contact', userData)
       .then(res => {
+        document.getElementById('success').innerHTML='Thank you for contacting me. I will get back shortly.';
         clearState();
       });
 
@@ -84,7 +85,6 @@ export const Contact = () => {
                         name='name'
                         className='form-control'
                         placeholder='Name'
-                        
                         required
                         onChange={handleChange}
                       />
@@ -99,13 +99,13 @@ export const Contact = () => {
                         name='email'
                         className='form-control'
                         placeholder='Email'
-                        
                         required
                         onChange={handleChange}
                       />
                       <p className='help-block text-danger'></p>
                     </div>
                   </div>
+                  <p></p>
                 </div>
                 <div className='form-group'>
                   <textarea
@@ -114,13 +114,14 @@ export const Contact = () => {
                     className='form-control'
                     rows='4'
                     placeholder='Message'
-                    
                     required
                     onChange={handleChange}
                   ></textarea>
                   <p className='help-block text-danger'></p>
                 </div>
-                <div id='success'></div>
+                <div id='successss'>
+                  <p id='success'></p>
+                </div>
                 <button type='submit' className='btn btn-custom btn-lg'>
                   Send Message
                 </button>

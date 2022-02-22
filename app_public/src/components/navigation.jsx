@@ -22,7 +22,7 @@ export const Navigation = () => {
         >
           <ul className='nav navbar-nav navbar-right'>
             <li>
-              <a href='#top' className='page-scroll'>
+              <a href='#header' className='page-scroll'>
                 Home
               </a>
             </li>
