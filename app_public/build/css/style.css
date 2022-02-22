@@ -351,7 +351,7 @@ header .intro-text {
 }
 /* Resume Section */
 #resume{
-  padding: 100px 0;
+  padding: 100px 0 50px 0;
   background: linear-gradient(to right, #000000 0%, #07213e 100%);
   color: #fff;
 }
@@ -385,6 +385,7 @@ header .intro-text {
   font-weight: 500;
   padding: 5px 0;
   color: #fff;
+  font-size: 26px;
 }
 #resume .service-desc {
   margin-bottom: 40px;

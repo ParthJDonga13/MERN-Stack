@@ -84,7 +84,7 @@ export const Contact = () => {
                         name='name'
                         className='form-control'
                         placeholder='Name'
-                        value={this.state.name}
+                        
                         required
                         onChange={handleChange}
                       />
@@ -99,7 +99,7 @@ export const Contact = () => {
                         name='email'
                         className='form-control'
                         placeholder='Email'
-                        value={this.state.email}
+                        
                         required
                         onChange={handleChange}
                       />
@@ -114,7 +114,7 @@ export const Contact = () => {
                     className='form-control'
                     rows='4'
                     placeholder='Message'
-                    value={this.state.message}
+                    
                     required
                     onChange={handleChange}
                   ></textarea>

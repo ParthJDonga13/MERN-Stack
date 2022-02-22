@@ -13,7 +13,7 @@ export const Header = () => {
                 
                 <p>I Write Code</p>
                 <a
-                  href='#about'
+                  href='#contact'
                   className='btn btn-custom btn-lg page-scroll'
                 >
                   Contact me

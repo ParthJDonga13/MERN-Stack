@@ -8,21 +8,21 @@ export const Projects = () => {
                 <div className='row'>
                     <div className='portfolio-items'>
                         <div className='col-sm-6 col-md-4 col-lg-4'>
-                            <img style = {{borderRadius:'50px'}}className="img-responsive" src="img/esociety.jpg" alt='warehouse.jpg' />
+                            <img style = {{borderRadius:'50px'}} className="img-responsive" src="img/esociety.jpg" alt='Society.jpg' />
                             <h3>E-Society</h3>
                             <p>Managed team and effectively delegate the work. Used HTML, CSS, JS, JQUERY, SQL, Servlet, JSP, and JDBC techs in the project. Prepared project reports and presentations. Given Presentation to project reviewer and guides.</p>
                         </div>
                     </div>
                     <div className='portfolio-items'>
                         <div className='col-sm-6 col-md-4 col-lg-4'>
-                            <img style = {{borderRadius:'50px'}}className="img-responsive" src="img/warehouse.jpg" alt='warehouse.jpg' />
+                            <img style = {{borderRadius:'50px'}} className="img-responsive" src="img/warehouse.jpg" alt='warehouse.jpg' />
                             <h3>Warehouse Management Software</h3>
                             <p>Implemented UI of Pages with theme and Code Validations of User inputs in the project. Assist the Team with all aspects of software design and coding. Maintained Stored Procedures using MySQL.</p>
                         </div>
                     </div>
                     <div className='portfolio-items'>
                         <div className='col-sm-6 col-md-4 col-lg-4'>
-                            <img style = {{borderRadius:'50px'}}className="img-responsive" src="img/warehouse.jpg" alt='warehouse.jpg' />
+                            <img style = {{borderRadius:'50px'}} className="img-responsive" src="img/Mobile_store.jpg" alt='Mobile_store.jpg' />
                             <h3>Lavish Mobile Store</h3>
                             <p>Online Mobile Store project Using MEAN Stack Programming. It has all the crud operations in order to run an online mobile store. </p>
                         </div>
