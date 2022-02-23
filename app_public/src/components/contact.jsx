@@ -6,23 +6,22 @@ const initialState = {
   name: '',
   email: '',
   message: '',
-  
 }
-
 
 export const Contact = () => {
 
-  const [{ name, email, message,sendmsg }, setState] = useState(initialState)
+  const [{ name, email, message }, setState] = useState(initialState)
 
   const handleChange = (e) =>{
     const {name,value} = e.target;
     setState((prevState) => ({ ...prevState, [name]: value }));
   }
+
   const clearState = () => this.setState({ ...initialState })
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(name,email,message,sendmsg);
+    console.log(name,email,message);
     const userData = {
       name: name,
       email: email,
@@ -32,6 +31,9 @@ export const Contact = () => {
     axios.post('/api/contact', userData)
       .then(res => {
         document.getElementById('success').innerHTML='Thank you for contacting me. I will get back shortly.';
+        document.getElementById('name').value='';
+        document.getElementById('email').value='';
+        document.getElementById('message').value='';
         clearState();
       });
 
